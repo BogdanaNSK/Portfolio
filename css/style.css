@@ -1,5 +1,6 @@
 body{
 font-family: 'Inter', sans-serif;
+font-size: 14px;
 }
 .dark{
   background-color: #232326;
@@ -27,6 +28,10 @@ font-family: 'Inter', sans-serif;
 .title-h1{
     font-size: 74px;
     text-transform: uppercase;
+}
+.title-h3{
+  font-size: 16px;
+  font-weight: 700;
 }
 .photo{
   margin-bottom: 120px;
@@ -56,9 +61,29 @@ header{
 }
 .nav-link{
   text-decoration: none;
-  color: #F3F2F0;
+  color: #fdfbfb;
   font-size: 14px;
 }
 .nav-link:hover{
   color: #D40000;
+}
+.social{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  margin-top: 100px;
+}
+.project{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.project-img{
+  width: 16px;
+  height: 12px;
+  display: block;
+  background-image: url(../img/arrow.svg);
+  margin-left: 15px;
 }
