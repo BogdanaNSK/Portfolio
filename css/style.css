@@ -1,6 +1,6 @@
 body{
-font-family: 'Inter', sans-serif;
-font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
 }
 .dark{
   background-color: #232326;
@@ -9,12 +9,24 @@ font-size: 14px;
 .dark.nav-link{
   color: #F3F2F0;
 }
+.dark.circle circle{
+  fill: #D40000;
+}
+.dark.triangle path{
+  fill: #FFFFFF;
+}
 .light{
   background-color: #F3F2F0;
   color: #010101;
 }
 .light.nav-link{
   color: #010101;
+}
+.light.circle circle{
+  fill: #FFFFFF;
+}
+.light.triangle path{
+  fill: #D40000;
 }
 .wrapper{
   max-width: 1140px;
@@ -26,8 +38,8 @@ font-size: 14px;
   font-size: 28px;  
 }
 .title-h1{
-    font-size: 74px;
-    text-transform: uppercase;
+  font-size: 74px;
+  text-transform: uppercase;
 }
 .title-h3{
   font-size: 16px;
@@ -86,4 +98,24 @@ header{
   display: block;
   background-image: url(../img/arrow.svg);
   margin-left: 15px;
+}
+.scill{
+  display: flex;
+}
+.scill-item{
+  flex: 0 0 24%;
+}
+.scill.title-h3{
+  text-transform: uppercase;
+}
+.scill.description{
+  line-height: 150%;
+}
+.circle-main {
+  height: 253px;
+  width: 253px;
+}
+.circle-nav {
+  height: 106px;
+  width: 106px;
 }
