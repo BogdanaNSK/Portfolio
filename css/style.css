@@ -79,6 +79,22 @@ header{
 .nav-link:hover{
   color: #D40000;
 }
+.nav-info.nav-item{
+  position: relative;
+}
+.nav-info.nav-item::before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 24px;
+  background-color: rgba(243, 242, 240, 0.5);
+  position: absolute;
+  nav-left: 0;
+  top: calc(50%-12px);
+}
+.nav-info.nav-item:first-child::before{
+  display: none;
+}
 .social{
   display:flex;
   justify-content: space-between;
@@ -114,8 +130,13 @@ header{
 .circle-main {
   height: 253px;
   width: 253px;
+  fill: #D40000;
 }
 .circle-nav {
   height: 106px;
   width: 106px;
+  fill: #D40000;
+}
+.triangle path{
+  fill: #FFFFFF;
 }
