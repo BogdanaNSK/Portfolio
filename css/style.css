@@ -65,6 +65,7 @@ header{
 .nav-item{
   padding-left: 16px;
   padding-right: 16px;
+  position: relative;
 }
 .nav-item:first-child{
   padding-left: 0;
@@ -93,7 +94,7 @@ header{
   background-color: rgba(243, 242, 240, 0.5);
   position: absolute;
   nav-left: 0;
-  top: calc(50%-12px);
+  top: calc(50% - 12px);
 }
 .nav-info.nav-item:first-child::before{
   display: none;
@@ -158,7 +159,7 @@ header{
   fill: #D40000;
   position: absolute;
   left: -128px;
-  top: calc(50%-126px);
+  top: calc(50% - 126px);
   z-index: 1;
 }
 .triangle{
@@ -174,5 +175,5 @@ header{
   fill: #D40000;
   position: absolute;
   right: 38px;
-  top: calc(50%-53px);
+  top: calc(50% - 53px);
 }
