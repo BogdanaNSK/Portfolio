@@ -236,6 +236,22 @@ header {
   right: 32px;
   top: calc(50% - 60px);
 }
+.circle-tarif {
+  height: 140px;
+  width: 140px;
+  fill: #D40000;
+  position: absolute;
+  left: -80px;
+  top: calc(50% - 70px);
+}
+.circle-price {
+  width: 90px;
+  height: 90px;
+  fill: #D40000;
+  position: absolute;
+  left: -46px;
+  top: calc(50% - 45px);
+}
 .section-about {
   padding-top: 101px;
 }
@@ -397,6 +413,7 @@ header {
 }
 .section-advantages {
   padding-top: 153px;
+  padding-bottom: 180px;
 }
 .advanteges-text {
   font-size: 28px;
@@ -446,6 +463,7 @@ header {
   border-right: 1px solid rgba(243, 242, 240, 0.3);
   display: flex;
   justify-content: center;
+  padding: 35px;
 }
 .tech-item:first-child,
 .tech-item:nth-child(5) {
@@ -486,10 +504,13 @@ header {
   border: 10px solid transparent;
   border-bottom: 10px solid #E31B1B;
 }
+.section-tarif {
+  padding-top: 150px;
+}
 .tarif {
   display: grid;
-  grid-template: repeat(4,1fr)/1fr1fr;
-}
+  grid-template-columns: 1fr 1fr;
+ }
 .tarif-title {
   grid-column: 1/3;
   grid-row: 1/2;
@@ -497,18 +518,35 @@ header {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.tarift-item {
   border-bottom: 1px solid #F3F2F0;
+  padding-top: 5px;
+}
+.tarif-title > div {
+  position: relative;
+}
+.tarif-title p {
+  position: relative;
+  z-index: 1;
+}
+.tarif-item {
+  border-bottom: 1px solid #F3F2F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 61px;
+  height: 268px;
 }
 .tarif-description {
   font-size: 28px;
   line-height: 150%;
   opacity: 0.8;
+  border-bottom: 1px solid #F3F2F0;
+  padding-bottom: 51px;
 }
 .tarif-name {
   font-size: 28px;
   line-height: 150%;
+  margin-bottom: 20px;
 }
 .tarif-text {
   font-size: 16px;
@@ -522,16 +560,19 @@ header {
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 25px;
 }
 .tarif-list {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+  font-size: 16px;
 }
 .tarif-list-item {
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
+  padding-left: 15px;
+  margin-bottom: 14px;
 }
 .tarif-list-item::before {
   content: '';
@@ -548,4 +589,12 @@ header {
   font-weight: 700;
   font-size: 42px;
   line-height: 150%;
+}
+.tarif-footer {
+  position: relative;
+}
+.tarif-footer p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
 }
