@@ -221,6 +221,22 @@ header {
   top: calc(50% - 140px);
   z-index: 1;
 }
+.circle-tarif {
+  width: 140px;
+  height: 140px;
+  fill: #D40000;
+  position: absolute;
+  left: -80px;
+  top: calc(50% - 70px);
+}
+.circle-price {
+  width: 90px;
+  height: 90px;
+  fill: #D40000;
+  position: absolute;
+  left: -46px;
+  top: calc(50% - 45px);
+}
 .triangle {
   fill: #FFFFFF;
   position: absolute;
@@ -235,22 +251,6 @@ header {
   position: absolute;
   right: 32px;
   top: calc(50% - 60px);
-}
-.circle-tarif {
-  height: 140px;
-  width: 140px;
-  fill: #D40000;
-  position: absolute;
-  left: -80px;
-  top: calc(50% - 70px);
-}
-.circle-price {
-  width: 90px;
-  height: 90px;
-  fill: #D40000;
-  position: absolute;
-  left: -46px;
-  top: calc(50% - 45px);
 }
 .section-about {
   padding-top: 101px;
@@ -510,10 +510,8 @@ header {
 .tarif {
   display: grid;
   grid-template-columns: 1fr 1fr;
- }
+}
 .tarif-title {
-  grid-column: 1/3;
-  grid-row: 1/2;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -530,14 +528,16 @@ header {
 }
 .tarif-item {
   border-bottom: 1px solid #F3F2F0;
-  display: flex;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 61px;
-  height: 268px;
+  padding-top: 33px;
+  padding-bottom: 61px;
+  height: 268px;
 }
 .tarif-description {
   font-size: 28px;
+  font-weight: 700;
   line-height: 150%;
   opacity: 0.8;
   border-bottom: 1px solid #F3F2F0;
