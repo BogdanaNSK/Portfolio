@@ -47,7 +47,7 @@ body {
     color: #F3F2F0;
     border-bottom: 2px solid #F3F2F0;
 }
-.dark .advanteges-image path {
+.dark .advantages-image path {
     fill: #F3F2F0;
 }
 .dark .tech-item {
@@ -125,7 +125,7 @@ body {
   color: #010101;
   border-bottom: 2px solid #010101;
 }
-.light .advanteges-image path {
+.light .advantages-image path {
   fill: #010101;
 }
 .light .tech-item {
@@ -548,34 +548,34 @@ header {
   padding-top: 153px;
   padding-bottom: 180px;
 }
-.advanteges-text {
+.advantages-text {
   font-size: 28px;
   line-height: 150%;
   max-width: 870px;
 }
-.advanteges {
+.advantages {
   display: grid;
   grid-template: 1fr 1fr / repeat(3, 1fr);
   grid-gap: 81px 22px;
   padding-top: 80px;
   margin-top: 78px;
 }
-.advanteges-item {
+.advantages-item {
   display: flex;
   align-items: center;
 }
-.advanteges-image {
+.advantages-image {
   margin-right: 40px;
 }
-.advanteges-image svg {
+.advantages-image svg {
   width: 40px;
   height: 40px;
 }
-.advanteges .title-h3 {
+.advantages .title-h3 {
   margin-top: 0;
   margin-bottom: 11px;
 }
-.advanteges-description {
+.advantages-description {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 150%;
@@ -965,7 +965,7 @@ form select {
     flex: 0 0 100%;
     padding-bottom: 56px;
   }
-  .advanteges {
+  .advantages {
     grid-template-columns: 1fr 1fr;
   }
   .tarif-title {
@@ -1042,7 +1042,7 @@ form select {
   .tech-image, .jquery .tech-image {
     width: 50px;
   }
-  .advanteges {
+  .advantages {
     grid-template-columns: 1fr;
   }
   .steps-item {
