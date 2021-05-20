@@ -47,7 +47,7 @@ body {
     color: #F3F2F0;
     border-bottom: 2px solid #F3F2F0;
 }
-.dark .advantages-image path {
+.dark .advanteges-image path {
     fill: #F3F2F0;
 }
 .dark .tech-item {
@@ -125,7 +125,7 @@ body {
   color: #010101;
   border-bottom: 2px solid #010101;
 }
-.light .advantages-image path {
+.light .advanteges-image path {
   fill: #010101;
 }
 .light .tech-item {
@@ -247,7 +247,7 @@ header {
   width: 1px;
   height: 24px;
   position: absolute;
-  nav-left: 0;
+  left: 0;
   top: calc(50% - 12px);
 }
 .nav-info .nav-item:first-child::before {
@@ -394,7 +394,7 @@ header {
   width: 90px;
   height: 90px;
   position: absolute;
-  left: -46px;
+  left: -21px;
   top: calc(50% - 45px);
 }
 .section-about {
@@ -420,6 +420,7 @@ header {
   font-size: 28px;
   line-height: 150%;
   opacity: 0.8;
+  border-bottom: 1px solid #F3F2F0;
   padding: 62px 10px 62px 9px;
 }
 .about-01 {
