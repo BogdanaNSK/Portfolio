@@ -198,7 +198,7 @@
 }
 
 /* no icon support for input elements */
-input.ui-button.ui-button-icon-only {
+input .ui-button .ui-button-icon-only {
 	text-indent: 0;
 }
 
@@ -217,10 +217,9 @@ input.ui-button.ui-button-icon-only {
 	height: 2.1em;
 	text-indent: -9999px;
 	white-space: nowrap;
-
 }
 
-input.ui-button.ui-icon-notext .ui-icon {
+input .ui-button.ui-icon-notext .ui-icon {
 	width: auto;
 	height: auto;
 	text-indent: 0;
@@ -230,8 +229,8 @@ input.ui-button.ui-icon-notext .ui-icon {
 
 /* workarounds */
 /* Support: Firefox 5 - 40 */
-input.ui-button::-moz-focus-inner,
-button.ui-button::-moz-focus-inner {
+input .ui-button::-moz-focus-inner,
+button .ui-button::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
@@ -245,7 +244,7 @@ button.ui-button::-moz-focus-inner {
 	margin-right: 0;
 }
 .ui-controlgroup > .ui-controlgroup-item:focus,
-.ui-controlgroup > .ui-controlgroup-item.ui-visual-focus {
+.ui-controlgroup > .ui-controlgroup-item .ui-visual-focus {
 	z-index: 9999;
 }
 .ui-controlgroup-vertical > .ui-controlgroup-item {
@@ -271,10 +270,10 @@ button.ui-button::-moz-focus-inner {
 .ui-controlgroup-vertical .ui-controlgroup-label + .ui-controlgroup-item {
 	border-top: none;
 }
-.ui-controlgroup-horizontal .ui-controlgroup-label.ui-widget-content {
+.ui-controlgroup-horizontal .ui-controlgroup-label .ui-widget-content {
 	border-right: none;
 }
-.ui-controlgroup-vertical .ui-controlgroup-label.ui-widget-content {
+.ui-controlgroup-vertical .ui-controlgroup-label .ui-widget-content {
 	border-bottom: none;
 }
 
@@ -301,8 +300,8 @@ button.ui-button::-moz-focus-inner {
 	overflow: visible;
 	border: none;
 }
-.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon,
-.ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
+.ui-checkboxradio-radio-label .ui-checkboxradio-checked .ui-icon,
+.ui-checkboxradio-radio-label .ui-checkboxradio-checked:hover .ui-icon {
 	background-image: none;
 	width: 8px;
 	height: 8px;
@@ -362,8 +361,8 @@ button.ui-button::-moz-focus-inner {
 	font-size: 1em;
 	margin: 1px 0;
 }
-.ui-datepicker select.ui-datepicker-month,
-.ui-datepicker select.ui-datepicker-year {
+.ui-datepicker select .ui-datepicker-month,
+.ui-datepicker select .ui-datepicker-year {
 	width: 45%;
 }
 .ui-datepicker table {
@@ -405,12 +404,12 @@ button.ui-button::-moz-focus-inner {
 	width: auto;
 	overflow: visible;
 }
-.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+.ui-datepicker .ui-datepicker-buttonpane button .ui-datepicker-current {
 	float: left;
 }
 
 /* with multiple calendars */
-.ui-datepicker.ui-datepicker-multi {
+.ui-datepicker .ui-datepicker-multi {
 	width: auto;
 }
 .ui-datepicker-multi .ui-datepicker-group {
@@ -468,7 +467,7 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker-rtl .ui-datepicker-buttonpane button {
 	float: left;
 }
-.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-buttonpane button .ui-datepicker-current,
 .ui-datepicker-rtl .ui-datepicker-group {
 	float: right;
 }
@@ -710,12 +709,12 @@ button.ui-button::-moz-focus-inner {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.ui-selectmenu-button.ui-button {
+.ui-selectmenu-button .ui-button {
 	text-align: left;
 	white-space: nowrap;
 	width: 14em;
 }
-.ui-selectmenu-icon.ui-icon {
+.ui-selectmenu-icon .ui-icon {
 	float: right;
 	margin-top: 0;
 }
@@ -742,8 +741,8 @@ button.ui-button::-moz-focus-inner {
 }
 
 /* support: IE8 - See #6727 */
-.ui-slider.ui-state-disabled .ui-slider-handle,
-.ui-slider.ui-state-disabled .ui-slider-range {
+.ui-slider .ui-state-disabled .ui-slider-handle,
+.ui-slider .ui-state-disabled .ui-slider-range {
 	filter: inherit;
 }
 
@@ -819,7 +818,7 @@ button.ui-button::-moz-focus-inner {
 	right: 0;
 }
 /* more specificity required here to override default borders */
-.ui-spinner a.ui-spinner-button {
+.ui-spinner a .ui-spinner-button {
 	border-top-style: none;
 	border-bottom-style: none;
 	border-right-style: none;
@@ -848,16 +847,16 @@ body .ui-tooltip {
 /* Interaction states
 ----------------------------------*/
 
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
+html .ui-button .ui-state-disabled:hover,
+html .ui-button .ui-state-disabled:active {
 	border: 1px solid #c5c5c5;
 	background: #f6f6f6;
 	font-weight: normal;
 	color: #454545;
 }
-a.ui-button,
-a:link.ui-button,
-a:visited.ui-button,
+a .ui-button,
+a:link .ui-button,
+a:visited .ui-button,
 .ui-button {
 	color: #454545;
 	text-decoration: none;
@@ -878,9 +877,9 @@ a.ui-button:focus {
 .ui-visual-focus {
 	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
 }
-a.ui-button:active,
+a .ui-button:active,
 .ui-button:active,
-.ui-button.ui-state-active:hover {
+.ui-button .ui-state-active:hover {
 	border: 1px solid #003eff;
 	background: #007fff;
 	font-weight: normal;
@@ -976,7 +975,7 @@ a.ui-button:active,
 	background-image: url("images/ui-icons_ffffff_256x240.png");
 }
 .ui-state-highlight .ui-icon,
-.ui-button .ui-state-highlight.ui-icon {
+.ui-button .ui-state-highlight .ui-icon {
 	background-image: url("images/ui-icons_777620_256x240.png");
 }
 .ui-state-error .ui-icon,

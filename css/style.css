@@ -71,9 +71,10 @@ body {
     background-image: url(../img/arrow.svg);
 }
 .dark form input,
-.dark .ui-selectmenu-button.ui-button,
+.dark .ui-selectmenu-button .ui-button,
 .ui-selectmenu-menu {
     background-color: #38383A;
+    color: #F3F2F0;
 }
 .dark .footer-bottom {
     color: rgba(243, 242, 240, 0.3);
@@ -92,7 +93,7 @@ body {
   color: #010101;
 }
 .light .nav-link,
-.light .ui-selectmenu-button.ui-button {
+.light .ui-selectmenu-button .ui-button {
     color: #010101;
 }
 .light .circle circle {
@@ -149,7 +150,7 @@ body {
   background-image: url(../img/arrow-light.svg);
 }
 .light form input,
-.light .ui-selectmenu-button.ui-button,
+.light .ui-selectmenu-button .ui-button,
 .light .ui-selectmenu-menu {
   background-color: #E7E6E4;
 }
@@ -823,6 +824,7 @@ form select {
   width: 100%;
   color: #fff;
   padding: 25px 20px 25px;
+  border: none;
   box-sizing: border-box;
   margin-bottom: 39px;
   border-radius: 0;
@@ -1310,7 +1312,7 @@ form select {
     form input {
         padding: 21px 20px;
     }
-    .ui-selectmenu-button.ui-button {
+    .ui-selectmenu-button .ui-button {
         padding: 21px 20px;
         border-radius: 0;
     }
