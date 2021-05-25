@@ -41,51 +41,54 @@ body {
 
 .dark .nav-social .nav-item::before,
 .dark .nav-info .nav-item::before {
-    background-color: rgba(243, 242, 240, 0.5);
+  background-color: rgba(243, 242, 240, 0.5);
 }
 .dark .nav-tabs-item.ui-state-active .nav-tabs-link{
-    color: #F3F2F0;
-    border-bottom: 2px solid #F3F2F0;
+  color: #F3F2F0;
+  border-bottom: 2px solid #F3F2F0;
 }
 .dark .advantages-image path {
-    fill: #F3F2F0;
+  fill: #F3F2F0;
 }
 .dark .tech-item {
-    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
-    border-right: 1px solid rgba(243, 242, 240, 0.3);
+  border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+  border-right: 1px solid rgba(243, 242, 240, 0.3);
 }
 .dark .tech-item:first-child,
 .dark .tech-item:nth-child(5) {
-    border-left: 1px solid rgba(243, 242, 240, 0.3);
+  border-left: 1px solid rgba(243, 242, 240, 0.3);
 }
 .dark .html,
 .dark .css,
 .dark .js,
 .dark .jquery {
-    border-top: 1px solid rgba(243, 242, 240, 0.3);
+  border-top: 1px solid rgba(243, 242, 240, 0.3);
 }
 .dark .tarif-list-item::before {
-    background: #F3F2F0;
+  background: #F3F2F0;
 }
 .dark .project-img {
-    background-image: url(../img/arrow.svg);
+  background-image: url(../img/arrow.svg);
 }
 .dark form input,
-.dark .ui-selectmenu-button .ui-button,
+.dark .ui-selectmenu-button.ui-button,
 .ui-selectmenu-menu {
-    background-color: #38383A;
-    color: #F3F2F0;
+  background-color: #38383A;
+  color: #F3F2F0;
+}
+.dark .ui-menu.ui-menu-item:hover {
+  color: #F3F2F0;
 }
 .dark .footer-bottom {
-    color: rgba(243, 242, 240, 0.3);
+  color: rgba(243, 242, 240, 0.3);
 }
 .dark .footer-link {
-    color: rgba(243, 242, 240, 0.3);
-    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+  color: rgba(243, 242, 240, 0.3);
+  border-bottom: 1px solid rgba(243, 242, 240, 0.3);
 }
 .dark .footer-link:hover {
-    color: rgba(243, 242, 240, 1);
-    border-bottom: 1px solid rgba(243, 242, 240, 1);
+  color: rgba(243, 242, 240, 1);
+  border-bottom: 1px solid rgba(243, 242, 240, 1);
 }
 
 .light {
@@ -93,7 +96,7 @@ body {
   color: #010101;
 }
 .light .nav-link,
-.light .ui-selectmenu-button .ui-button {
+.light .ui-selectmenu-button.ui-button {
     color: #010101;
 }
 .light .circle circle {
@@ -820,7 +823,7 @@ form input[type=submit]:hover {
 form select {
   width: 100%;
 }
-.ui-selectmenu-button .ui-button {
+.ui-selectmenu-button.ui-button {
   width: 100%;
   color: #fff;
   padding: 25px 20px 25px;
@@ -834,15 +837,17 @@ form select {
   outline: none;
 }
 .ui-selectmenu-menu .ui-menu {
-  color: rgba(243, 242, 240, 0.4);
+   box-sizing: border-box;
+   border-radius: 0;
+}
+.ui-menu.ui-menu-item {
+  margin: 15px;
+  padding-left: 5px;
   font-size: 12px;
+  line-height: 150%;
 }
-.ui-selectmenu-menu .ui-menu .ui-menu-item {
-  padding: 10px 210px;
-}
-.ui-selectmenu-menu .ui-menu .ui-menu-item:hover {
-  color: rgba(243, 242, 240, 1);
-  padding: 10px 20px;
+.ui-selectmenu-text {
+  text-align: left;
 }
 .footer-top {
   display: flex;
